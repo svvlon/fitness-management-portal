@@ -1,0 +1,31 @@
+flowchart TD
+    A([Start]) --> B[Display Main Menu]
+    B --> C{Select option}
+    C -->|Customer| D[Customer Login or Register]
+    C -->|Admin| E[Admin Login]
+    C -->|Exit| Z([End])
+    D --> F{Customer authenticated?}
+    F -->|No| B
+    F -->|Yes| G[Member Main Menu]
+    G --> H{Choose action}
+    H -->|Buy package| I[Select package and add lessons]
+    H -->|View packages| J[Show remaining lessons]
+    H -->|Register for class| K[Show weekly class schedule]
+    K --> L{Valid booking?}
+    L -->|Yes| M[Confirm booking and deduct package]
+    L -->|No| K
+    M --> G
+    I --> G
+    J --> G
+    H -->|Logout| B
+    E --> N{Admin authenticated?}
+    N -->|No| B
+    N -->|Yes| O[Admin Menu]
+    O --> P{Choose action}
+    P -->|Class planner| Q[View, add, or delete classes]
+    P -->|View/Add trainer| R[View trainer details or add trainer]
+    P -->|View statistics| S[Calculate business statistics]
+    P -->|Logout| B
+    Q --> O
+    R --> O
+    S --> O
