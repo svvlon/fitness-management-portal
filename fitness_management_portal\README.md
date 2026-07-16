@@ -30,7 +30,6 @@ Sample customer:
 ## Files
 
 - `app.py` - main Python program
-- `docs/report_content.md` - report content draft
 - `docs/user_guide.md` - user guide with sample screens
 - `docs/flowchart.mmd` - Mermaid flowchart source
 - `data/fitness_data.json` - generated automatically when the program runs
