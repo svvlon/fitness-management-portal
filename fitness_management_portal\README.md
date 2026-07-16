@@ -36,7 +36,7 @@ Sample customer:
 
 ## Non-AI component suggestion
 
-For the oral presentation, explain that the package deduction and booking validation feature was manually improved. In the code, this is handled by `book_class()` and checks:
+The package deduction and booking validation feature was manually improved. In the code, this is handled by `book_class()` and checks:
 
 - Customer has a matching package
 - Class is not full
